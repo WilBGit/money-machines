@@ -1,0 +1,178 @@
+<html><head><style>
+@page { size: letter; margin: 0.5in; }
+body { font-family: -apple-system, Helvetica, Arial, sans-serif; font-size: 11px; line-height: 1.4; color: #1a1a1a; }
+h1 { font-size: 18px; color: #0a0a0a; border-bottom: 2px solid #2563eb; padding-bottom: 4px; margin-bottom: 8px; }
+h2 { font-size: 14px; color: #2563eb; margin-top: 12px; margin-bottom: 4px; }
+h3 { font-size: 12px; color: #374151; margin-top: 8px; margin-bottom: 2px; }
+table { border-collapse: collapse; width: 100%; margin: 6px 0; font-size: 10px; }
+th { background: #f3f4f6; border: 1px solid #d1d5db; padding: 3px 6px; text-align: left; font-weight: 600; }
+td { border: 1px solid #d1d5db; padding: 3px 6px; }
+ul, ol { margin: 4px 0; padding-left: 16px; }
+li { margin: 1px 0; }
+code { background: #f3f4f6; padding: 1px 3px; border-radius: 2px; font-size: 10px; }
+strong { color: #1e40af; }
+.footer { font-size: 9px; color: #9ca3af; text-align: center; margin-top: 12px; border-top: 1px solid #e5e7eb; padding-top: 4px; }
+</style></head><body><h1>🤖 AI Jarvis Trading Desk</h1>
+<h2>Technical Levels Quick Reference</h2>
+<h3>RSI Zones</h3>
+<table>
+<thead>
+<tr>
+<th>RSI Level</th>
+<th>Zone</th>
+<th>Meaning</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>0–20</strong></td>
+<td>Deeply Oversold</td>
+<td>Extreme selling exhaustion</td>
+<td>Look for call entries</td>
+</tr>
+<tr>
+<td><strong>20–30</strong></td>
+<td>Oversold</td>
+<td>Selling pressure easing</td>
+<td>Prepare call setups</td>
+</tr>
+<tr>
+<td><strong>30–45</strong></td>
+<td>Weak Bearish</td>
+<td>Mild downtrend</td>
+<td>Wait for reversal signal</td>
+</tr>
+<tr>
+<td><strong>45–55</strong></td>
+<td>Neutral</td>
+<td>No clear direction</td>
+<td>Avoid directional trades</td>
+</tr>
+<tr>
+<td><strong>55–70</strong></td>
+<td>Weak Bullish</td>
+<td>Mild uptrend</td>
+<td>Wait for pullback entry</td>
+</tr>
+<tr>
+<td><strong>70–80</strong></td>
+<td>Overbought</td>
+<td>Buying pressure stretching</td>
+<td>Prepare put setups</td>
+</tr>
+<tr>
+<td><strong>80–100</strong></td>
+<td>Deeply Overbought</td>
+<td>Extreme buying exhaustion</td>
+<td>Look for put entries</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Tip:</strong> RSI divergences (price makes new high/low but RSI doesn't) are the highest-confidence signals.</p>
+</blockquote>
+<h3>SMA Quick Guide</h3>
+<table>
+<thead>
+<tr>
+<th>SMA</th>
+<th>Meaning</th>
+<th>How to Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>20 SMA</strong></td>
+<td>Short-term trend</td>
+<td>Price above = short-term bullish; below = bearish</td>
+</tr>
+<tr>
+<td><strong>50 SMA</strong></td>
+<td>Medium-term trend</td>
+<td>Crosses = trend change; price reclaims it = trend resume</td>
+</tr>
+<tr>
+<td><strong>100 SMA</strong></td>
+<td>Long-term trend</td>
+<td>Institutional level; strong support/resistance</td>
+</tr>
+<tr>
+<td><strong>200 SMA</strong></td>
+<td>Macro trend</td>
+<td>The "line in the sand" — above = bull market, below = bear</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key Crossovers:</strong>
+- <strong>Golden Cross</strong> (50 SMA &gt; 200 SMA) = Bullish long-term signal
+- <strong>Death Cross</strong> (50 SMA &lt; 200 SMA) = Bearish long-term signal</p>
+<h3>Support &amp; Resistance Identification</h3>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>How to Find</th>
+<th>Reliability</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Price peaks/valleys</strong></td>
+<td>Previous highs/lows on daily chart</td>
+<td>⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td><strong>SMA levels</strong></td>
+<td>Where 50/100/200 SMA sits</td>
+<td>⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td><strong>Round numbers</strong></td>
+<td>$50, $100, $150 psychological levels</td>
+<td>⭐⭐⭐</td>
+</tr>
+<tr>
+<td><strong>Volume shelf</strong></td>
+<td>High-volume nodes on volume profile</td>
+<td>⭐⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td><strong>Prior gap fills</strong></td>
+<td>Price tends to fill gaps</td>
+<td>⭐⭐⭐</td>
+</tr>
+</tbody>
+</table>
+<h3>ATR (Average True Range) Usage</h3>
+<table>
+<thead>
+<tr>
+<th>Use</th>
+<th>How</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Stop placement</strong></td>
+<td>Set stop 1.5–2× ATR below entry</td>
+</tr>
+<tr>
+<td><strong>Target setting</strong></td>
+<td>Target = 2–3× ATR from entry</td>
+</tr>
+<tr>
+<td><strong>Position sizing</strong></td>
+<td>Larger ATR → fewer contracts (wider stop = more risk $)</td>
+</tr>
+<tr>
+<td><strong>Volatility filter</strong></td>
+<td>ATR expanding = trend strengthening; contracting = ranging</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>ATR Formula:</strong> ATR(14) = average of true range over 14 periods. True Range = max(H−L, |H−prevC|, |L−prevC|)</p>
+</blockquote>
+<hr />
+<p>📥 <strong>Get the full 5-sheet bundle:</strong> https://example.com/products</p><div class="footer">AI Jarvis Trading Desk | <a href="https://example.com/products">Get the full bundle</a></div></body></html>

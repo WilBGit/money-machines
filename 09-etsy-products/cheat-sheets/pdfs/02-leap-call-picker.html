@@ -1,0 +1,146 @@
+<html><head><style>
+@page { size: letter; margin: 0.5in; }
+body { font-family: -apple-system, Helvetica, Arial, sans-serif; font-size: 11px; line-height: 1.4; color: #1a1a1a; }
+h1 { font-size: 18px; color: #0a0a0a; border-bottom: 2px solid #2563eb; padding-bottom: 4px; margin-bottom: 8px; }
+h2 { font-size: 14px; color: #2563eb; margin-top: 12px; margin-bottom: 4px; }
+h3 { font-size: 12px; color: #374151; margin-top: 8px; margin-bottom: 2px; }
+table { border-collapse: collapse; width: 100%; margin: 6px 0; font-size: 10px; }
+th { background: #f3f4f6; border: 1px solid #d1d5db; padding: 3px 6px; text-align: left; font-weight: 600; }
+td { border: 1px solid #d1d5db; padding: 3px 6px; }
+ul, ol { margin: 4px 0; padding-left: 16px; }
+li { margin: 1px 0; }
+code { background: #f3f4f6; padding: 1px 3px; border-radius: 2px; font-size: 10px; }
+strong { color: #1e40af; }
+.footer { font-size: 9px; color: #9ca3af; text-align: center; margin-top: 12px; border-top: 1px solid #e5e7eb; padding-top: 4px; }
+</style></head><body><h1>🤖 AI Jarvis Trading Desk</h1>
+<h2>LEAP Call Picker — Strikes, Deltas &amp; Breakevens</h2>
+<h3>Strike Selection at a Glance</h3>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Delta Range</th>
+<th>Cost</th>
+<th>Breakeven</th>
+<th>Best For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Deep ITM</strong></td>
+<td>0.80–0.90</td>
+<td>High</td>
+<td>Close to current price</td>
+<td>Conservative / stock replacement</td>
+</tr>
+<tr>
+<td><strong>ITM</strong></td>
+<td>0.60–0.79</td>
+<td>Medium</td>
+<td>Modest move needed</td>
+<td>Balanced risk/reward</td>
+</tr>
+<tr>
+<td><strong>ATM</strong></td>
+<td>0.45–0.55</td>
+<td>Moderate</td>
+<td>Strike + premium</td>
+<td>Directional with leverage</td>
+</tr>
+<tr>
+<td><strong>OTM</strong></td>
+<td>0.30–0.44</td>
+<td>Low</td>
+<td>Significant move needed</td>
+<td>Speculative / high leverage</td>
+</tr>
+<tr>
+<td><strong>Far OTM</strong></td>
+<td>0.10–0.29</td>
+<td>Very low</td>
+<td>Large move required</td>
+<td>Lottery ticket — avoid</td>
+</tr>
+</tbody>
+</table>
+<h3>LEAP Call Selection Rules</h3>
+<ol>
+<li><strong>Minimum Delta:</strong> ≥ 0.60 (ITM preferred for LEAPs)</li>
+<li><strong>Minimum DTE:</strong> 6–12 months (LEAP = 1yr+ ideal)</li>
+<li><strong>IV Percentile:</strong> Buy when IV &lt; 50th pct (cheaper premium)</li>
+<li><strong>Breakeven must be reachable</strong> — compare to 52-week range</li>
+</ol>
+<h3>Breakeven Math</h3>
+<pre><code>Breakeven = Strike Price + Premium Paid
+</code></pre>
+<p><strong>Example:</strong> Buy $150 strike call for $12.50
+- Breakeven = $150 + $12.50 = <strong>$162.50</strong>
+- Stock must exceed $162.50 by expiration to profit</p>
+<h3>ITM vs OTM — When to Choose What</h3>
+<table>
+<thead>
+<tr>
+<th>Situation</th>
+<th>Choose</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>High conviction, long timeframe</td>
+<td>Deep ITM (Δ 0.80+)</td>
+<td>Higher Δ = moves like stock, less theta decay</td>
+</tr>
+<tr>
+<td>Moderate conviction, balanced</td>
+<td>ITM (Δ 0.60–0.79)</td>
+<td>Good leverage without excessive premium</td>
+</tr>
+<tr>
+<td>Speculative, short timeframe</td>
+<td>ATM/OTM (Δ 0.30–0.55)</td>
+<td>Cheaper but needs bigger move</td>
+</tr>
+<tr>
+<td>IV is elevated</td>
+<td>Deeper ITM</td>
+<td>Less extrinsic value to decay</td>
+</tr>
+</tbody>
+</table>
+<h3>Delta &amp; Probability Cheat</h3>
+<table>
+<thead>
+<tr>
+<th>Delta</th>
+<th>≈ Probability of Finishing ITM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.80</td>
+<td>80%</td>
+</tr>
+<tr>
+<td>0.70</td>
+<td>70%</td>
+</tr>
+<tr>
+<td>0.50</td>
+<td>50%</td>
+</tr>
+<tr>
+<td>0.30</td>
+<td>30%</td>
+</tr>
+<tr>
+<td>0.20</td>
+<td>20%</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>AI Jarvis Tip:</strong> For LEAPs, prioritize <strong>0.65–0.80 delta</strong>. You want the option to behave like the stock while still getting leverage.</p>
+</blockquote>
+<hr />
+<p>📥 <strong>Get the full 5-sheet bundle:</strong> https://example.com/products</p><div class="footer">AI Jarvis Trading Desk | <a href="https://example.com/products">Get the full bundle</a></div></body></html>

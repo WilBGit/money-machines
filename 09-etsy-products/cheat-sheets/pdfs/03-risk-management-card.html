@@ -1,0 +1,126 @@
+<html><head><style>
+@page { size: letter; margin: 0.5in; }
+body { font-family: -apple-system, Helvetica, Arial, sans-serif; font-size: 11px; line-height: 1.4; color: #1a1a1a; }
+h1 { font-size: 18px; color: #0a0a0a; border-bottom: 2px solid #2563eb; padding-bottom: 4px; margin-bottom: 8px; }
+h2 { font-size: 14px; color: #2563eb; margin-top: 12px; margin-bottom: 4px; }
+h3 { font-size: 12px; color: #374151; margin-top: 8px; margin-bottom: 2px; }
+table { border-collapse: collapse; width: 100%; margin: 6px 0; font-size: 10px; }
+th { background: #f3f4f6; border: 1px solid #d1d5db; padding: 3px 6px; text-align: left; font-weight: 600; }
+td { border: 1px solid #d1d5db; padding: 3px 6px; }
+ul, ol { margin: 4px 0; padding-left: 16px; }
+li { margin: 1px 0; }
+code { background: #f3f4f6; padding: 1px 3px; border-radius: 2px; font-size: 10px; }
+strong { color: #1e40af; }
+.footer { font-size: 9px; color: #9ca3af; text-align: center; margin-top: 12px; border-top: 1px solid #e5e7eb; padding-top: 4px; }
+</style></head><body><h1>🤖 AI Jarvis Trading Desk</h1>
+<h2>Risk Management Card — Position Sizing &amp; Stop Rules</h2>
+<h3>Position Sizing Formula</h3>
+<pre><code>Position Size = (Account × Risk%) / (Option Price × Stop Loss%)
+</code></pre>
+<p><strong>Example:</strong> $50,000 account, risk 1% per trade, option costs $5, 25% stop loss</p>
+<ul>
+<li>Max risk $ = $50,000 × 0.01 = <strong>$500</strong></li>
+<li>Stop loss $ = $5.00 × 0.25 = <strong>$1.25 per contract</strong></li>
+<li>Contracts = $500 / $1.25 = <strong>4 contracts</strong></li>
+</ul>
+<h3>Hard Limits — Never Exceed</h3>
+<table>
+<thead>
+<tr>
+<th>Rule</th>
+<th>Limit</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Max risk per trade</td>
+<td><strong>1–2%</strong> of account</td>
+<td>2% = aggressive; 1% = conservative</td>
+</tr>
+<tr>
+<td>Max daily loss</td>
+<td><strong>3%</strong> of account</td>
+<td>Hit it → stop trading for the day</td>
+</tr>
+<tr>
+<td>Max weekly loss</td>
+<td><strong>6%</strong> of account</td>
+<td>Hit it → reduce size 50% next week</td>
+</tr>
+<tr>
+<td>Max open positions</td>
+<td><strong>5</strong></td>
+<td>Prevents overexposure</td>
+</tr>
+<tr>
+<td>Max sector concentration</td>
+<td><strong>30%</strong></td>
+<td>Don't stack same sector</td>
+</tr>
+</tbody>
+</table>
+<h3>Stop-Loss Levels (3 Tiers)</h3>
+<table>
+<thead>
+<tr>
+<th>Stop Type</th>
+<th>Trigger</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🟡 <strong>Soft Stop</strong></td>
+<td>Option drops <strong>25%</strong> from entry</td>
+<td>Evaluate — tighten or exit</td>
+</tr>
+<tr>
+<td>🔴 <strong>Hard Stop</strong></td>
+<td>Option drops <strong>35%</strong> from entry</td>
+<td>Exit immediately — no exceptions</td>
+</tr>
+<tr>
+<td>⚫ <strong>Underlying Stop</strong></td>
+<td>Stock drops <strong>0.15%</strong> below key support</td>
+<td>Exit the option regardless of P&amp;L</td>
+</tr>
+</tbody>
+</table>
+<h3>Daily Loss Tracker</h3>
+<table>
+<thead>
+<tr>
+<th>Daily Loss</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0 – 1.5%</td>
+<td>🟢 Normal trading</td>
+</tr>
+<tr>
+<td>1.5 – 3%</td>
+<td>🟡 Reduce size 50%, no new positions</td>
+</tr>
+<tr>
+<td>3%+</td>
+<td>🔴 <strong>Stop trading today</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>Risk Checklist (Pre-Trade)</h3>
+<ul>
+<li>[ ] Risk per trade ≤ 2% of account?</li>
+<li>[ ] Daily loss limit not reached?</li>
+<li>[ ] Stop-loss level defined <strong>before</strong> entry?</li>
+<li>[ ] No more than 5 open positions?</li>
+<li>[ ] Sector not over-concentrated?</li>
+<li>[ ] Would this loss be survivable?</li>
+</ul>
+<blockquote>
+<p><strong>AI Jarvis Rule:</strong> If you're debating whether to hold a losing position — you should already be out.</p>
+</blockquote>
+<hr />
+<p>📥 <strong>Get the full 5-sheet bundle:</strong> https://example.com/products</p><div class="footer">AI Jarvis Trading Desk | <a href="https://example.com/products">Get the full bundle</a></div></body></html>

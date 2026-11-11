@@ -1,0 +1,47 @@
+# Secrets and local artifacts
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+*credentials*
+*credential*
+*secret*
+*token*
+*oauth*
+
+# Personal data and generated output
+*.csv
+*.tsv
+*.jsonl
+*.db
+*.sqlite
+*.sqlite3
+*.log
+*.mp3
+*.wav
+*.m4a
+*.mp4
+*.mov
+*.png
+*.jpg
+*.jpeg
+output/
+outputs/
+media/
+logs/
+runtime/
+state/
+cache/
+
+# Python and local tooling
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+.DS_Store
+._*
