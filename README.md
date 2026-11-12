@@ -1,7 +1,5 @@
 # Money Machines Revenue and Content Toolkit
 
-[![CI](https://github.com/WilBGit/money-machines/actions/workflows/ci.yml/badge.svg)](https://github.com/WilBGit/money-machines/actions/workflows/ci.yml)
-
 Money Machines is a collection of local-first scripts, content templates, and service concepts for building revenue experiments around newsletters, consulting, lead generation, website audits, content repurposing, trade journals, video production, and digital products.
 
 ## Included active work
