@@ -1,5 +1,7 @@
 # Money Machines Revenue and Content Toolkit
 
+[![CI](https://github.com/WilBGit/money-machines/actions/workflows/ci.yml/badge.svg)](https://github.com/WilBGit/money-machines/actions/workflows/ci.yml)
+
 Money Machines is a collection of local-first scripts, content templates, and service concepts for building revenue experiments around newsletters, consulting, lead generation, website audits, content repurposing, trade journals, video production, and digital products.
 
 ## Included active work
@@ -10,7 +12,7 @@ Money Machines is a collection of local-first scripts, content templates, and se
 - `05-website-audit/`: website audit utility.
 - `06-content-repurposing/`: content transformation tools.
 - `07-trade-journal/`: trade-journal analysis utility.
-- `08-youtube-channel/`: channel plan and local video generator. The standalone generator is also published at https://github.com/example-org/youtube-generator.
+- `08-youtube-channel/`: channel plan and local video generator. The standalone generator is also published at https://github.com/WilBGit/youtube-generator.
 - `09-etsy-products/`: digital-product plans and cheat-sheet source files.
 - `10-lead-list-service/`: lead-list and outreach generation utility.
 - `shared/`: reusable analysis, dashboard, OAuth setup, and LLM client helpers.
@@ -29,4 +31,4 @@ Each directory contains its own script or setup notes. Install only the dependen
 
 ## Security
 
-This repository is private and sanitized. Read `SECURITY.md` before adding integrations. Never add API keys, Google token files, Gumroad tokens, OAuth state, customer records, phone numbers, email lists, payment information, or generated output to Git.
+This public repository is a sanitized source publication. Read `SECURITY.md` before adding integrations. Never add API keys, Google token files, Gumroad tokens, OAuth state, customer records, phone numbers, email lists, payment information, or generated output to Git.
